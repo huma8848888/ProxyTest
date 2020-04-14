@@ -7,6 +7,7 @@ public class CSHTest {
 
     public static void main(String[] args) {
 
+        //能不能在本地看见$Proxy.class主要就是这句，可以在自己的项目中加上这句话
         System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles","true");
 
         human human = new Tom();
